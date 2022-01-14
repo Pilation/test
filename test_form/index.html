@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Aisle period products">
+    <meta name="keywords" content="Aisle, period-proud, period, pads">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test-task</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="forms">
+            <div class="heading">
+                <div class="heading__box">
+                    <h1 class="heading__title">Donations</h1>
+                    <form action="" method="post" id="form-search" class="heading__search">
+                        <input type="search" class="heading__search-input" placeholder="Search">
+                        <select name="" id="" class="heading__search-statuses">
+                            <option value="all-statuses">All statuses</option>
+                            <option value="almost-all-statuses">Almost all statuses</option>
+                            <option value="no-statuses">No statuses</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="dotation">
+                <div class="donation__box">
+                    <h2 class="donation__title">Donation</h2>
+                    <div class="donation__rates">
+                        <span class="donation__currency">&euro;20.60 eur</span>
+                        <span class="donation__dollar">&asymp; &dollar;22.22 usd </span>
+                    </div>
+                    <div class="donation__id">
+                        <span>ID</span>
+                        <span class="donation__id-number">DYHY694Y</span>
+                    </div>
+                    <ul class="donation__statuses-list">
+                        <li class="donation__statuses-item">
+                            <span class="donation__statuses-title">Status</span>
+                            <span class="donation__statuses-check"></span>Success</span>
+                        </li>
+                        <li class="donation__statuses-item">
+                            <span class="donation__statuses-title">Supporter</span>
+                            <a href="#">Charlotte Ann</a>
+                        </li>
+                        <li class="donation__statuses-item">
+                            <span class="donation__statuses-title">Campaign</span>
+                            <a href="#">Workout for water</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="change">
+                <nav class="change__menu">
+                    <ul class="change__list">
+                        <li class="change__item amount">Change Amount</li>
+                        <li class="change__item payment-method">Change Payment Method</li>
+                        <li class="change__item date">Change Date</li>
+                        <li class="change__item recurring">Cancel Recurring</li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="settings">
+                <div class="settings__box">
+                    <nav class="settings__menu">
+                        <ul class="settings__titles">
+                            <li class="settings__title">Behavior</li>
+                            <li class="settings__title">Appearance</li>
+                            <li class="settings__title">Custom Fields</li>
+                            <li class="settings__title">Questions</li>
+                            <li class="settings__title">URL Control</li>
+                        </ul>
+                    </nav>
+                    <form action="" method="post" id="settings-form" class="settings-form">
+                        <ul class="settings__list">
+                            <li class="settings__item behaviour">
+                                <div class="behaviour__designation">
+                                    <label for="designation" class="behaviour__small-title">Designation</label>
+                                    <select name="designation" id="designation" class="behaviour__designation-select">
+                                        <option value="matchCheckoutSetting">Match Checkout Setting</option>
+                                        <option value="don'tMatchCheckoutSetting">Don't Match Checkout Setting</option>
+                                        <option value="-alwaysMatchCheckoutSetting">Always Match Checkout Setting
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="behaviour__goal">
+                                    <label for="goal" class="behaviour__small-title">Goal</label>
+                                    <input type="text" id="goal" name="goal" maxlength="10" placeholder="$10.00">
+                                    <select name="goal" id="goal" class="behaviour__goal-select">
+                                        <option value="usd">USD</option>
+                                        <option value="eur">EUR</option>
+                                        <option value="-uah">UAH</option>
+                                    </select>
+                                </div>
+                                <div class="behaviour__default-amount">
+                                    <label for="default-amount" class="behaviour__small-title">Default
+                                        Amount</label>
+                                    <ul class="behaviour__default-amount-checkers">
+                                        <li>
+                                            <input type="radio" name="default-amount" id="option2">
+                                            <label for="option1">Match Checkout Setting</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="default-amount" id="option1" checked>
+                                            <label for="option2">Customize</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="checkbox" id="check1" checked>
+                                            <label for="check1">Allow donor to change default currency</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="behaviour__sliders">
+                                    <ul class="behaviour__sliders-list">
+                                        <li>
+                                            <label for="Border-size" class="behaviour__small-title">Border
+                                                size</label>
+                                            <input type="range" min="0" max="3" value="0.1" class="slider"
+                                                id="Border-size">
+                                            <span id="value"></span>
+                                            <span>px</span>
+                                        </li>
+                                        <li>
+                                            <label for="Border-size" class="behaviour__small-title">Border
+                                                radius</label>
+                                            <input type="range" min="0" max="20" value="1" class="slider"
+                                                id="Border-radius">
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="settings__buttons">
+                            <input type="submit" value="Save changes">
+                            <input type="reset" value="Cancel">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
